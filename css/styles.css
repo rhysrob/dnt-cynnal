@@ -370,6 +370,17 @@ header{
 	line-height:24px;
 }	
 
+#recordContent h2 {
+	margin:1em auto;
+	font-size:20px;
+}
+
+#recordContent img {
+	margin:10px;
+	width:30%;
+	
+}
+
 .noMarginP{
 	margin-bottom:0px !important;
 }
