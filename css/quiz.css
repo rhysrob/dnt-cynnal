@@ -1,0 +1,221 @@
+#quiz{
+	width:100%;
+	margin-top:40px;
+}
+
+.question{
+	background:#2d3e50;
+	padding:20px;
+	margin-bottom:20px;
+	color:#dfe0e1;
+}
+
+.question h2{
+	font-size:30px;
+	margin-bottom:10px;
+}
+
+.question .qText{
+	
+}
+
+
+.question .qImage {
+	margin:10px auto;
+	width:100%;
+
+}
+.question .qImage img {
+	max-width:100%;
+}
+
+
+.qAnswerImages label > input {	
+	visibility:hidden;
+	position:absolute;
+	float:left;
+	width:20%;
+}
+
+.qAnswerImages label > input + img {
+	cursor:pointer;
+	border:solid 5px transparent;
+	width:40%;
+}
+.qAnswerImages label>input:checked + img {
+	border:solid 5px #e65000;
+
+} 
+
+.question .completeBtn{
+	margin-top:20px;
+	display:inline-block;
+	border:1px solid #dddddd;
+	padding:7px;
+	cursor:pointer;
+}
+
+.question .completeBtn:hover{
+	margin-top:20px;
+	display:inline-block;
+	border:1px solid #dddddd;
+	color:#e65000;
+	background:#dddddd;
+	font-weight:normal;
+	padding:7px;
+	cursor:pointer;
+}
+
+.radioAnswers, .radioAnswers tr,  .checkAnswers, .checkAnswers tr{
+	width:100%;
+}
+.radioAnswers tr, .checkAnswers tr{
+	margin-bottom:20px;
+}
+
+.radioAnswers td, .checkAnswers td{
+	height:30px
+}
+
+.radioAnswers td:nth-child(1), .checkAnswers td:nth-child(1){
+	width:30px;
+	padding-right:10px;
+}	
+	
+.question input[type='text']{
+	background:none;
+	background-color:#dddddd;
+	border:1px solid #dddddd;
+	color:#0f232c;
+	font-family:AileronLight;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 0px 6px 6px;
+	width:100%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display:none;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+	border-radius:30px;
+    vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+	background: #FFFFFF;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin: 3px;
+}
+input[type="radio"]:checked + label{
+	
+}
+
+
+input[type="radio"] + label {
+	display:inline-block;
+    width:20px;
+    height:20px;
+	border-radius:30px;
+	margin:-1px 4px 0 0;
+    vertical-align:middle;
+	border:1px solid #FFFFFF;
+	
+	cursor:pointer;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+   background: #FFFFFF;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin: 3px;
+}
+input[type="checkbox"]:checked + label{
+	
+}
+
+
+input[type="checkbox"] + label {
+	display:inline-block;
+    width:20px;
+    height:20px;
+	margin:-1px 4px 0 0;
+    vertical-align:middle;
+	border:1px solid #FFFFFF;	
+	cursor:pointer;
+}
+
+select{
+	background:#dddddd;
+	border:none;
+	color:#0f232c;
+	font-family:AileronLight;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 0px 6px 6px;
+	width:100%;
+}
+
+.marked, .markedWrong{
+	background:#0f232c;
+}
+
+.correct{
+	background:#27a54f;
+}
+
+.wrong{
+	background:#da1a2b;
+}
+
+#theScore{
+	width: 100%;
+    background: #0f232c;
+	height:80px;
+	margin-bottom:50px;
+	color:#dfe0e1;
+}
+
+#scoreWrapper {
+	line-height: 80px;
+}
+#scoreWrapper p{
+	
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+	display:inline-block;
+}
+
+.restartBtn{
+	font-size:18px !important;
+	font-weight:normal !important;
+	padding:10px;
+	border:1px solid #dddddd;
+	padding:7px;
+	cursor:pointer;
+}
+#scoreText{
+	line-height:inherit !important;
+}
+
+.restartBtn:hover{
+	border:1px solid #dddddd;
+	color:#e65000;
+	background:#dddddd;
+}
+	
